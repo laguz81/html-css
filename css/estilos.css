@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+:root{
+    /* Colores */
+    --green-color:#7ACC2D;
+    --white-color:white;
+    --black-color:#313337;
+
+    /* Tipografia */
+    --normal:12px;    
+
+    /* Espaciado */
+    --space:10px;
+
+    /* Box shadow */
+    --box-shadow: 0 0 1px #c1bcbc;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-size:var(--normal);
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    background-color:var(--green-color);
+    padding: var(--space);
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a{
+    color:var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: var(--white-color);
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2{
+    font-size: 17px;
+    font-weight: bold;
+}
+.main_section{
+    padding: 15%;
+    text-align: center;
+}
+
+.products{
+    background-image: url("../images/curve.png");
+    max-height: 50px;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    padding: 10% 30%;
+}
+.product{
+    padding: var(--space);
+    margin-top: -240px;
+}
+
+.product .content{
+    background-color: var(--white-color);
+    padding: 15px;   
+    box-shadow: var(--box-shadow);
+}
+
+.product .content p{
+    max-width: 230px;
+}
+
+.product .content img{
+    max-width: 134px;
+}
+
+.image_content{
+    text-align: center;
+}
+
+.main_button{
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size:var(--normal);
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.main_button:hover{
+    background-color: #5e9e22;
+}
+
+.cutes{         
+    display: flex;
+    justify-content: space-between;
+}
+
+.cute{
+    padding:125px 100px 100px;
+}
+
+.cute .content img{
+    max-width: 138px;
+}
+
+.mensions{         
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+
+.mensions h1{
+    display: block;    
+}
+
+.mension{
+    padding:30px 0;    
+}
+
+
+.mension .content{
+    background-color: var(--white-color);    
+    box-shadow: var(--box-shadow);    
+    max-width: 239px;
+}
+
+
+.mension .content p{
+    max-width: 239px;
+    padding: 0 10px 15px;
+}
+
+.mension .content h2{
+    padding:  0 10px;
+}
+
+.footer{
+    background: var(--black-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+.terminos, .contacto{
+    display: inherit;
+    align-items: center;
+    margin: 0 15px;
+}
